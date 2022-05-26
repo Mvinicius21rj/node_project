@@ -1,3 +1,9 @@
+// This line must come before importing any instrumented module.
+const tracer = require('dd-trace').init()
+
+
+
+
 const express = require('express');
 const app = express();
 const router = express.Router();
